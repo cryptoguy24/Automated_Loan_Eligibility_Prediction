@@ -1,0 +1,23 @@
+univariate analysis:
+
+numerical cols:
+applicant_income: those whose income is is between 0-10k often required the loan
+coapplicant_income: it even less for co-applicant's income, most of them in between 0-5k
+loan_amount: They often apply for loan 100-200k
+loan_amount_term: For about 36 months for repayment (3 years)
+
+categorical cols:
+gender: Most of mens do take the loan
+married: married couples tends to apply for loan
+dependents: The more the dependents, the less the chance to apply for loan
+education: Graduate tends to apply more
+self_employed: non self_emplyed applies for loan often then
+credit_histroy: The one with good credit history tries for loans
+property_area: semiurbans slightly applies more for loans
+loan_statues: Most of them gets the loans
+
+outliers:
+Boxplots of Applicant Income, Coapplicant Income are within valid range, so no invalid was entered within the data
+
+My interpretation from univariate analysis:
+Our analysis reveals significant income disparity among applicants. While the average income appears to be $5,400, this figure is inflated by a small number of very wealthy applicants. The 'typical' (median) applicant actually earns roughly $3,800. We adjusted our model to ensure these wealthy outliers do not skew the predictions for the typical customer

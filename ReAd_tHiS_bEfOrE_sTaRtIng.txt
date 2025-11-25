@@ -1,0 +1,7 @@
+My Honest Thoughts
+The deployment recommendation is crucial — a live demo separates you from 80% of candidates who just have Jupyter notebooks. Even a simple Streamlit app makes everything more tangible.
+One concern: Five projects might feel like a lot to do well. It's better to have 3-4 polished, deeply understood projects than 6-7 surface-level ones. Recruiters will drill into details, so depth > breadth.
+The suggestion for a second NLP project is good, but I'd say: only if you can make it meaningfully different (e.g., one uses traditional ML, the other uses transformers/BERT).
+What I'd Add
+Consider adding business context to each project — not just "I built X model with Y accuracy," but "This solves Z problem, here's the impact." For example, with fraud detection: "Reduced false positives by X% while maintaining Y% fraud catch rate, which in a real system means..."
+GitHub README quality matters more than number of projects — make sure each has clear documentation, results, and insights.
