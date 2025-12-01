@@ -22,11 +22,10 @@ with col1:
     self_employed = st.selectbox("Self Employed", ["Yes", "No"])
 
 with col2:
-    total_income = st.number_input("Total Income ($)", min_value=0, value=5000)
-    loan_amount = st.number_input("Loan Amount ($)", min_value=0, value=120)
-    loan_term = st.selectbox("Loan Amount Term (Months)", [360, 180, 120, 84, 60])
+    total_income = st.number_input("Total Income ($) in Thousands (eg: 120k)", min_value=0, value=5000)
+    loan_amount = st.number_input("Loan Amount ($) in Thousands (eg: 56k)", min_value=0, value=120)
+    loan_term = st.selectbox("Loan Amount Term (Months)", [480, 360, 300, 240, 180, 120, 84, 60, 36, 12])
     
-    # CRITICAL FIX: Ensure these are treated as floats to match training data
     credit_history = st.selectbox("Credit History", [1.0, 0.0], format_func=lambda x: "Good (1.0)" if x == 1.0 else "Bad (0.0)")
     
     property_area = st.selectbox("Property Area", ["Rural", "Urban", "Semiurban"])
