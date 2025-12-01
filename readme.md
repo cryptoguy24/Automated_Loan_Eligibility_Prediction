@@ -9,6 +9,12 @@
 
 ---
 
+## 🚀 Live Demo
+### **[Click Here to Test the Deployed App](https://automated-loan-eligibility.streamlit.app/)**
+I have deployed the model to the cloud. You can access the web interface to test the model with your own inputs—no coding required.
+
+---
+
 ## 📖 Executive Summary
 In the banking sector, **Non-Performing Assets (NPAs)**—loans that default—are the primary threat to profitability. Traditional manual underwriting is slow, prone to human bias, and inefficient at scale.
 
