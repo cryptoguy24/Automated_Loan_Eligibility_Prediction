@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Load the model
-model = joblib.load("loan_prediction_model.pkl")
+model = joblib.load("model/Best_model.pkl")
 
 st.title("🏦 Loan Approval Prediction")
 st.write("Enter applicant details to check loan eligibility.")
