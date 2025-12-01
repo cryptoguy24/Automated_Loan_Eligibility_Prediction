@@ -1,0 +1,35 @@
+Folder PATH listing for volume Windows
+Volume serial number is 3AFB-8EC9
+C:.
+|   demo.py
+|   readme.md
+|   tree_structure.txt
+|   
++---data
+|       Loan.csv
+|       preprocessed_loan.csv
+|       X_test.csv
+|       X_train.csv
+|       X_valid.csv
+|       y_test.csv
+|       y_train.csv
+|       y_valid.csv
+|       
++---model
+|       Best_model.pkl
+|       
++---notebook
+|       1. EDA.ipynb
+|       2. Data_preprocessing_ML_Evaluation.ipynb.ipynb
+|       3. Model_Training_Test.ipynb
+|       
+\---plots
+        1.univariate_numeric_cols.png
+        2.univariate_cat_cols.png
+        3.Outliers_boxplots.png
+        4.Bivariate_correlation.png
+        5.Bivariate_Pairplot.png
+        8.Bivariate_categorical_vs_target.png
+        8.Bivariate_numerical_vs_target.png
+        numerical_vs_numerical.png
+        
