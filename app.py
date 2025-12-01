@@ -22,7 +22,7 @@ with col1:
     self_employed = st.selectbox("Self Employed", ["Yes", "No"])
 
 with col2:
-    total_income = st.number_input("Total Income ($) in Thousands (eg: 120k)", min_value=0, value=5000)
+    total_income = st.number_input("Total Income ($)", min_value=0, value=5000)
     loan_amount = st.number_input("Loan Amount ($) in Thousands (eg: 56k)", min_value=0, value=120)
     loan_term = st.selectbox("Loan Amount Term (Months)", [480, 360, 300, 240, 180, 120, 84, 60, 36, 12])
     
@@ -56,7 +56,9 @@ if st.button("Predict 🚀"):
         prediction = model.predict(input_data)[0]
         probability = model.predict_proba(input_data)[0][1] # Probability of Approval
 
-        if prediction == 1:
+        if total_income >= 100:
+            st.error(f"❌ Loan Rejected. Too low income!!!")
+        elif prediction == 1:
             st.success(f"🎉 Loan Approved! (Confidence: {probability*100:.2f}%)")
             st.balloons()
         else:
