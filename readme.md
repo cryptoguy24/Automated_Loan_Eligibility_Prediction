@@ -1,5 +1,6 @@
 # 🏦 Loan Eligibility Prediction: Automated Credit Risk Engine
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://automated-loan-eligibility.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Status](https://img.shields.io/badge/Status-Deployment--Ready-success)]()
@@ -67,27 +68,33 @@ After screening 14 models (including Random Forest, Gradient Boosting, and XGBoo
 ## 🛠️ Project Structure
 ```text
 C:.
-├── demo.py                      # Inference Script (Run this to test!)
-├── readme.md                    # Project Documentation
-├── tree_structure.txt           # Directory Tree
+│   .gitignore
+│   app.py                       # Streamlit Application Source Code
+│   demo.py                      # Local Inference Script
+│   readme.md                    # Project Documentation
+│   requirements.txt             # Project Dependencies
+│   tree_structure.txt
 │   
+├── .devcontainer/
+│       devcontainer.json
+│       
 ├── data/
-│   ├── Loan.csv                 # Raw dataset
-│   ├── preprocessed_loan.csv    # Cleaned data (Phase 1 Output)
-│   ├── X_train.csv, X_test.csv, X_valid.csv  # Split Features
-│   └── y_train.csv, y_test.csv, y_valid.csv  # Split Targets
+│       Loan.csv                 # Raw dataset
+│       preprocessed_loan.csv    # Cleaned data (Phase 1 Output)
+│       X_train.csv, X_test.csv, X_valid.csv  # Split Features
+│       y_train.csv, y_test.csv, y_valid.csv  # Split Targets
 │       
 ├── model/
-│   └── Best_model.pkl           # Serialized Champion Model (SVM Pipeline)
+│       Best_model.pkl           # Serialized Champion Model (SVM Pipeline)
 │       
 ├── notebook/
-│   ├── 1. EDA.ipynb
-│   ├── 2. Data_preprocessing_ML_Evaluation.ipynb.ipynb
-│   └── 3. Model_Training_Test.ipynb
+│       1. EDA.ipynb
+│       2. Data_preprocessing_ML_Evaluation.ipynb.ipynb
+│       3. Model_Training_Test.ipynb
 │       
 └── plots/                       # Evidence & Visualization
-    ├── approval_rates.png
-    ├── categorical_distribution.png
-    ├── correlation_matrix.png
-    ├── financial_variables_distribution.png
-    └── Total_Income.png
+        approval_rates.png
+        categorical_distribution.png
+        correlation_matrix.png
+        financial_variables_distribution.png
+        Total_Income.png

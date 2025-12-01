@@ -1,29 +1,35 @@
 Folder PATH listing for volume Windows
 Volume serial number is 3AFB-8EC9
 C:.
-|   demo.py
-|   readme.md
-|   tree_structure.txt
-|   
+¦   .gitignore
+¦   app.py
+¦   demo.py
+¦   readme.md
+¦   requirements.txt
+¦   tree_structure.txt
+¦   
++---.devcontainer
+¦       devcontainer.json
+¦       
 +---data
-|       Loan.csv
-|       preprocessed_loan.csv
-|       X_test.csv
-|       X_train.csv
-|       X_valid.csv
-|       y_test.csv
-|       y_train.csv
-|       y_valid.csv
-|       
+¦       Loan.csv
+¦       preprocessed_loan.csv
+¦       X_test.csv
+¦       X_train.csv
+¦       X_valid.csv
+¦       y_test.csv
+¦       y_train.csv
+¦       y_valid.csv
+¦       
 +---model
-|       Best_model.pkl
-|       
+¦       Best_model.pkl
+¦       
 +---notebook
-|       1. EDA.ipynb
-|       2. Data_preprocessing_ML_Evaluation.ipynb.ipynb
-|       3. Model_Training_Test.ipynb
-|       
-\---plots
+¦       1. EDA.ipynb
+¦       2. Data_preprocessing_ML_Evaluation.ipynb.ipynb
+¦       3. Model_Training_Test.ipynb
+¦       
++---plots
         approval_rates.png
         categorical_distribution.png
         correlation_matrix.png
