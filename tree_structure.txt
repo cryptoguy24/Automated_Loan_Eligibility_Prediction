@@ -24,12 +24,9 @@ C:.
 |       3. Model_Training_Test.ipynb
 |       
 \---plots
-        1.univariate_numeric_cols.png
-        2.univariate_cat_cols.png
-        3.Outliers_boxplots.png
-        4.Bivariate_correlation.png
-        5.Bivariate_Pairplot.png
-        8.Bivariate_categorical_vs_target.png
-        8.Bivariate_numerical_vs_target.png
-        numerical_vs_numerical.png
+        approval_rates.png
+        categorical_distribution.png
+        correlation_matrix.png
+        financial_variables_distribution.png
+        Total_Income.png
         

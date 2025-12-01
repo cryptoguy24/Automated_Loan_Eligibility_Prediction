@@ -38,8 +38,12 @@ Our analysis revealed a two-stage decision hierarchy:
 * **Credit History** is the **Gatekeeper**. If this is poor (`0.0`), rejection is almost guaranteed (99%), regardless of income.
 * **Income & Education** are the **Sizers**. They do not determine *if* you get a loan, but *how much* (Loan Amount) you can afford.
 
-### 2. The Co-Applicant Paradox
+![Approval Rates](plots/approval_rates.png)
+
+### 2. Feature Engineering: Total Income
 Initially, having a co-applicant seemed to increase rejection rates. Feature engineering revealed that co-applicants are often added to support weak primary applications. By creating a `Total_Income` feature, we resolved this multicollinearity and improved predictive power.
+
+![Total Income Distribution](plots/Total_Income.png)
 
 ---
 
@@ -62,25 +66,28 @@ After screening 14 models (including Random Forest, Gradient Boosting, and XGBoo
 
 ## 🛠️ Project Structure
 ```text
+C:.
+├── demo.py                      # Inference Script (Run this to test!)
+├── readme.md                    # Project Documentation
+├── tree_structure.txt           # Directory Tree
+│   
 ├── data/
 │   ├── Loan.csv                 # Raw dataset
 │   ├── preprocessed_loan.csv    # Cleaned data (Phase 1 Output)
 │   ├── X_train.csv, X_test.csv, X_valid.csv  # Split Features
 │   └── y_train.csv, y_test.csv, y_valid.csv  # Split Targets
-│
+│       
 ├── model/
 │   └── Best_model.pkl           # Serialized Champion Model (SVM Pipeline)
-│
+│       
 ├── notebook/
 │   ├── 1. EDA.ipynb
 │   ├── 2. Data_preprocessing_ML_Evaluation.ipynb.ipynb
 │   └── 3. Model_Training_Test.ipynb
-│
-├── plots/                       # Generated Analysis Charts
-│   ├── 1.univariate_numeric_cols.png
-│   ├── 8.Bivariate_categorical_vs_target.png
-│   └── ... (other EDA visualizations)
-│
-├── readme.md                    # Project Documentation
-└── tree_structure.txt           # Directory Tree
-└── demo.py                      # Demo model 
+│       
+└── plots/                       # Evidence & Visualization
+    ├── approval_rates.png
+    ├── categorical_distribution.png
+    ├── correlation_matrix.png
+    ├── financial_variables_distribution.png
+    └── Total_Income.png
