@@ -56,7 +56,7 @@ if st.button("Predict 🚀"):
         prediction = model.predict(input_data)[0]
         probability = model.predict_proba(input_data)[0][1] # Probability of Approval
 
-        if total_income >= 100:
+        if total_income <= 100:
             st.error(f"❌ Loan Rejected. Too low income!!!")
         elif prediction == 1:
             st.success(f"🎉 Loan Approved! (Confidence: {probability*100:.2f}%)")
