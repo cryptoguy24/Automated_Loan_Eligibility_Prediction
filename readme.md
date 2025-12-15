@@ -1,17 +1,11 @@
 # 🏦 Loan Eligibility Prediction: Automated Credit Risk Engine
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://automated-loan-eligibility.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Status](https://img.shields.io/badge/Status-Deployment--Ready-success)]()
 
 > *"Transforming manual underwriting into a data-driven, real-time decision engine."*
-
----
-
-## 🚀 Live Demo
-### **[Click Here to Test the Deployed App](https://automated-loan-eligibility.streamlit.app/)**
-I have deployed the model to the cloud. You can access the web interface to test the model with your own inputs—no coding required.
 
 ---
 
